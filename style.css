@@ -5,8 +5,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', 'sans-serif';
 }
+
 .btn-primary{
     color: #FFF;
     font-size: 1.25rem;
@@ -17,7 +18,7 @@
     border: 0;
     cursor: pointer;
 }
-.section-title{
+.section-title-head{
     color: #131313;
     font-size: 45px;
     font-weight: 700;
@@ -26,7 +27,7 @@
 /* header styles start */
 header{
     background: rgba(255, 144, 14, 0.10);
-    
+    overflow: hidden;
 }
 nav{
     display: flex;
@@ -59,6 +60,7 @@ nav li a{
 /* banner styles */
 .banner{
     padding: 6rem 0 2rem 0 ;
+    
 }
 .banner-content{
    max-width: 800px;
@@ -94,6 +96,7 @@ nav li a{
     height: 100vh;
     display: flex;
     margin: 5rem auto;
+    overflow: hidden;
 }
  .quick-ima{
     display: grid;
@@ -126,6 +129,61 @@ nav li a{
 }
 
 /* quick list styles end */
+
+/* feature container styles start */
+.feature{
+    width: 80%;
+    display: flex;
+    margin: 5rem auto;
+    justify-content: space-between; 
+
+}
+.feature .section-title-head{
+    border-left: 5px solid #FF900E;
+    padding-left: 1rem;
+}
+.feature-content{
+    width: 45%;
+    height: 100vh;
+}
+.feature-content .card{
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.feature-ima{
+    width: 45%;
+   height: 100vh;
+}
+.feature-ima img{
+   height: 100%;
+   display: block;
+}
+.year{
+    width: 300px;
+    position: relative;
+    bottom: 5rem;
+    right: 5rem;
+    border-radius: 8px;
+    background: #FF900e;
+    text-align: center;
+    color: white;
+    padding: 2rem 2rem;
+}
+.year h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+.year p{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* feature container styles end */
 
 /* responsive header styles */
 /* mobile devices */
@@ -173,6 +231,35 @@ nav li a{
 .quick-content p{
     padding: 1rem 0;
 }
+/* feature styles start */
+
+.feature{
+    flex-direction: column;
+    width: ;
+    margin: 1rem auto;
+}
+.feature-content{
+    width: %;
+    height: 100vh;
+}
+.year{
+    width: 100px;
+    position: relative;
+    bottom: 20px;
+    right: 30px;
+    padding: 10px 15px;
+}
+.year h1{
+    font-size:1.5rem;    
+}
+.year p{
+    font-size: 1rem;
+
+}
+
+
+
+
 }
 /* tabler or medium devices */
 @media screen and (min-width:577px) and (max-width: 960px) {
